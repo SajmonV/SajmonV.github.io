@@ -8,6 +8,16 @@ body {
     font-family: 'Signika Negative', sans-serif;
 }
 
+.bg-light {
+    background-color: white;
+    color: black
+}
+
+.bg-dark {
+    background-color: #333333;
+    color: white
+}
+
 .text-primary {
     color: red;
 }
@@ -23,6 +33,40 @@ body {
 
 .py-3 {
     padding: 3.5rem 0;
+}
+
+.p-1 {
+    padding: 1.5rem;
+}
+
+.p-2 {
+    padding: 2.5rem;
+}
+
+.p-3 {
+    padding: 3.5rem;
+}
+
+.m-1 {
+    margin: 1.5rem;
+}
+
+.m-2 {
+    margin: 2.5rem;
+}
+
+.m-3 {
+    margin: 3.5rem;
+}
+
+.list {
+    margin: 0.5rem 0;
+    list-style: none
+}
+
+.list li {
+    padding: 0.5rem 0;
+    border-bottom: gray dotted 1px;
 }
 
 .l-heading {
@@ -50,6 +94,8 @@ body {
 .source a {
     color: red;
 }
+
+
 
 .btn {
     display: inline-block;
@@ -79,7 +125,7 @@ a {
 }
 
 #navbar {
-    background: #333;
+    background: #333333;
     color: #fff;
     padding: 1rem;
     display: flex;
@@ -141,7 +187,9 @@ a {
 .m-heading {
     font-size: 2rem;
     margin-bottom: 0.75rem;
-    line-height: 1.1;}
+    line-height: 1.1;
+    text-align: center;
+}
 
 
 #about .items {
@@ -152,6 +200,8 @@ a {
 #about .items .item {
     text-align: center;
     padding: 1rem;
+    flex: 1;
+
 }
 
 #about .items .item i {
@@ -160,3 +210,28 @@ a {
     margin-bottom: 1rem;
     border-radius: 50%;
 }
+
+#project {
+    display: flex
+}
+
+#project .project-img {
+    background: url("../css/img/posters.jpg") no-repeat center center/cover;
+    color: black;
+    padding: 2px 0;
+}
+
+.project-img a {
+    color: red;
+}
+
+#project div {
+    flex: 1
+}
+
+#nadpis {text-shadow: 5px 2px black}
+
+#tomatoe {text-align: center }
+
+#tomatoe a {color: red}
+
