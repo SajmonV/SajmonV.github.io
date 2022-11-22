@@ -146,6 +146,9 @@ a {
     top: 0px;
 }
 
+
+
+
 #navbar a {
     color: #fff;
 }
@@ -161,7 +164,7 @@ a {
     margin: 0 0.25rem;
 }
 
-#navbar ul li a:hover {
+#navbar ul li a:hover, #navbar .active {
     background: red;
     border-radius: 5px;
 }
