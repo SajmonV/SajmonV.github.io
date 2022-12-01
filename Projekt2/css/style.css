@@ -65,7 +65,7 @@ body {
 
 .list {
     margin: 0.5rem 0;
-    list-style: none
+    list-style: none;
 }
 
 .list li {
@@ -143,10 +143,10 @@ a {
     align-items: center;
     position: sticky;
     position: -webkit-sticky;
-    top: 0px;
+    top: 0;
 }
 
-
+#navbar #hambac {display: none}
 
 
 #navbar a {
@@ -160,7 +160,7 @@ a {
 }
 
 #navbar ul li a {
-    padding: 0.75rem;
+    padding: 0.5rem;
     margin: 0 0.25rem;
 }
 
@@ -212,7 +212,7 @@ a {
 
 #about .items .item {
     text-align: center;
-    padding: 1rem;
+    padding: 1.5rem;
     flex: 1;
 
 }
@@ -290,4 +290,6 @@ a {
 }
 
 #contact h3 {margin-top: 3rem;}
+
+
 

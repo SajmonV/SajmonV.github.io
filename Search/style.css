@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Pomocné skupiny */
+body {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+a {text-decoration: none}
+
+/* Záhlaví */
+
+#nav {
+    background: deepskyblue;
+    color: white;
+    padding: 2vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 10vh
+}
+
+
+
+.list {
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+
+
+}
+
+.list li {padding: 1rem;}
