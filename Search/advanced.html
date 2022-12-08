@@ -17,9 +17,25 @@
     </div>
 </header>
 <main id="search-bar">
-    <h1>Google Advanced Search</h1>
-    <form class="search"><input type="text" name="search" id="search">
-        <div class="main-btn"><input type="button" class="btn" value="Google Search">
+    <h1>Google Search</h1>
+
+    <form action="https://www.google.com/search" class="search" id="ad-form">
+        <h2>Find pages with...</h2>
+
+        <div class="text"><label for="first">all these words:</label>
+            <input type="text" name="as_q" id="first"></div>
+
+        <div class="text"><label for="second">this exact word or phrase:</label>
+            <input type="text" name="as_epq" id="second"></div>
+
+        <div class="text"><label for="third">any of these words:</label>
+            <input type="text" name="as_oq" id="third"></div>
+
+        <div class="text"><label for="fourth">none of these words:</label>
+            <input type="text" name="as_eq" id="fourth"></div>
+
+        <div class="main-btn">
+            <input type="submit" class="btn" value="Advanced Search">
         </div>
 
     </form>
