@@ -26,8 +26,11 @@
 
                 if (k1 === k2) {
                     alert("Vektory jsou rovnoběžné")
+                    document.querySelector("#Ano").innerHTML = `Jsou vektory rovnoběžné? Ano`;
+
                 } else {
                     alert("Vektory nejsou rovnoběžné")
+                    document.querySelector("#Ne").innerHTML = `Jsou vektory rovnoběžné? Ne`;
                 }
                 return false;
 
@@ -63,6 +66,8 @@
 
     <div id="k1"></div>
     <div id="k2"></div>
+    <div id="Ano"></div>
+    <div id="Ne"></div>
 
 </head>
 <body>
