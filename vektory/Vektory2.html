@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vektory</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('#u1').value = 1;
+            document.querySelector('#u2').value = 3;
+            document.querySelector('#v1').value = -1;
+            document.querySelector('#v2').value = -3;
+
+
+            document.querySelector('form').onsubmit = () => {
+                let u1 = document.querySelector('#u1').value;
+                let u2 = document.querySelector('#u2').value;
+                let v1 = document.querySelector('#v1').value;
+                let v2 = document.querySelector('#v2').value;
+
+                let k1 = (u1 / v1)
+                let k2 = (u2 / v2)
+
+                document.querySelector("#k1").innerHTML = `K1: ${k1}`
+                document.querySelector("#k2").innerHTML = `K2: ${k2}`
+
+                if (k1 === k2) {
+                    alert("Vektory jsou rovnoběžné")
+                } else {
+                    alert("Vektory nejsou rovnoběžné")
+                }
+                return false;
+
+
+            }
+        })
+
+
+    </script>
+
+
+
+    <form>A:
+        <input type="number"
+               name="u1"
+               id="u1"
+               placeholder="x">
+        <input type="number"
+               name="u2"
+               id="u2"
+               placeholder="y"><br>
+        B:
+        <input type="number"
+               name="v1"
+               id="v1"
+               placeholder= "x">
+        <input type="number"
+               name="v2"
+               id="v2"
+               placeholder="y"><br>
+        <input type="submit"
+               value="Vypočítat" id="submit"></form>
+
+    <div id="k1"></div>
+    <div id="k2"></div>
+
+</head>
+<body>
+
+</body>
+</html>
