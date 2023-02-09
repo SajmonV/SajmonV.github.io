@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js"></script>
+    <title>Seznam ůkolů</title>
+</head>
+<body>
+<div id="myDIV" class="header">
+    <h2>My To Do List</h2>
+    <input type="text" id="myInput" placeholder="Title...">
+    <span id="addBtn">Add</span>
+</div>
+
+<ul id="myUL">
+    <li>Hit the gym</li>
+    <li class="checked">Pay bills</li>
+    <li>Meet George</li>
+    <li>Buy eggs</li>
+    <li>Read a book</li>
+    <li>Organize office</li>
+</ul>
+
+
+
+</body>
+
+
+</html>
+
+<script>document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector('#addBtn').onclick = newElement;
+    let myNodelist = document.querySelectorAll("#myUl li")
+
+    myNodelist.forEach(li => {
+        updateListItem(item);
+    });
+
+    function newElement() {
+        console.log(this)
+    }
+
+    function updateListItem(li) {
+        let span = document.createElement('span');
+        let txt = document.createTextNode('\u00D7');
+        span.className = "close";
+        span.onclick = function () {
+            this.parentElement.style.display = "none";
+        }
+        span.appendChild(txt);
+        item.appendChild(span);
+        li.onclick = function () {
+            this.classList.toggle("checked");
+        }
+    }
+});
+
+</script>
