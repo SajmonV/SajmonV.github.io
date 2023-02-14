@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Signika+Negative&family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+  <title>Survey</title>
+</head>
+<body>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Jídelna U Škopka</h1>
+    <p id="description" class="description text-center">
+      Děkujeme za Vaši návštěvu. Pomozte nám se rozvíjet.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Jméno</label>
+      <input type="text" name="name" id="name" class="form-control" placeholder="Vaše jméno" required="">
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input type="email" name="email" id="email" class="form-control" placeholder="Váš Email" required="">
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number">Věk<span class="clue">(nepovinné)</span></label>
+      <input type="number" name="age" id="number" min="10" max="99" class="form-control" placeholder="Věk">
+    </div>
+    <div class="form-group">
+      <p>Co byste chtěli vidět na našem manu?</p>
+      <label for="dropdown"></label><select id="dropdown" name="role" class="form-control" required="">
+      <option disabled="" selected="" value="">Vyberte jednu z možností</option>
+      <option value="student">Vegetariánské pokrmy</option>
+      <option value="job">Bezlepkové pokrmy</option>
+      <option value="learner">Více tradičních českých pokrmů</option>
+      <option value="preferNo">Více příloh</option>
+      <option value="other">Vše je v pořádku</option>
+    </select>
+    </div>
+
+    <div class="form-group">
+      <p>Jak hodnotíte kvalitu jídla?</p>
+      <label>
+        <input name="user-recommend" value="definitely" type="radio" class="input-radio"
+               checked="">Skvělá</label>
+      <label>
+        <input name="user-recommend" value="maybe" type="radio" class="input-radio">Průměrná</label>
+
+      <label><input name="user-recommend" value="not-sure" type="radio" class="input-radio">Ucpal jsem toaletu</label>
+    </div>
+
+    <div class="form-group">
+      <p>Co Vás na naší Jídelně nejvíce zaujalo?</p>
+      <label for="most-like"></label><select id="most-like" name="mostLike" class="form-control" required="">
+      <option disabled="" selected="" value="">Vyber možnost</option>
+      <option value="challenges">Nizké ceny</option>
+      <option value="projects">Kvalita jídla</option>
+      <option value="community">Nefunkční klimatizace</option>
+
+    </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Nejčastější problémy našich zákazníků. <br> Souhlasíte s některými?
+        <span class="clue">(Můžete označit více odpovědí)</span>
+      </p>
+
+      <label><input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">Jednovrstvý toaletní papír</label>
+      <label>
+        <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">Nefunkční klimatizace</label>
+      <label><input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">Solničky a pepřenky jsou prázdné</label>
+      <label><input name="prefer" value="challenges" type="checkbox" class="input-checkbox">Obsluha je neprofesionální</label>
+      <label><input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Kvalita jídla</label>
+      <label><input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Není možnost rezervace</label>
+      <label><input name="prefer" value="videos" type="checkbox" class="input-checkbox">U některých stolů chybí židle</label>
+      <label><input name="prefer" value="city-meetups" type="checkbox" class="input-checkbox">Po jídelně se potulují škůdci</label>
+      <label><input name="prefer" value="wiki" type="checkbox" class="input-checkbox">Maskot mi unesl dítě</label></label>
+    </div>
+
+    <div class="form-group">
+      <p>Něco víc Vás napadá? Neváhejte nám napsat.</p>
+      <label for="comments"></label><textarea id="comments" class="input-textarea" name="comment"
+                                              placeholder="Napište prosím své stížnosti..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Odeslat
+      </button>
+    </div>
+  </form>
+</div>
+
+
+</body>
+</html>
